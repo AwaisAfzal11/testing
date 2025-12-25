@@ -2,6 +2,7 @@
   "name": "react-app-starter",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
@@ -10,7 +11,6 @@
     "@testing-library/user-event": "^14.5.2",
     "aos": "^2.3.4",
     "axios": "^1.7.7",
-    "fs": "^0.0.1-security",
     "js-cookie": "^3.0.5",
     "lucide-react": "^0.562.0",
     "marked": "^15.0.4",
@@ -29,19 +29,18 @@
     "swiper": "^11.1.14",
     "web-vitals": "^4.2.2"
   },
+
   "scripts": {
     "start": "react-scripts start",
-    "generate-sitemap": "node sitemap-generator.js",
-    "build": "npm run generate-sitemap && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -53,15 +52,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/parser": "^7.26.3",
-    "@babel/traverse": "^7.26.4",
-    "@tailwindcss/typography": "^0.5.15"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "tailwind.config.js",
-  "author": "",
-  "license": "ISC"
+  }
 }
